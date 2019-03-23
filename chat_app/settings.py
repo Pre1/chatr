@@ -96,16 +96,14 @@ REST_FRAMEWORK = {
 # }
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=config(
+    'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': config('django'),
-            'USER': config('django'),
-            'PASSWORD': config('d4536e7d84bfe59e538614f05e369b0e'),
-            'HOST': config('localhost'),
+            'NAME': 'django',
+            'USER': 'django',
+            'PASSWORD': 'd4536e7d84bfe59e538614f05e369b0e',
+            'HOST': 'localhost',
             'PORT': '',
-        )
-    )
+        }
 }
 
 
